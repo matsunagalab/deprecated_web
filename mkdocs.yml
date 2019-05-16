@@ -1,0 +1,30 @@
+site_name: 埼玉大学工学部情報工学科/大学院理工学研究科 松永研究室
+site_description: Matsunaga laboratory Saitama University
+site_author: Yasuhiro Matsunaga
+
+theme:
+  name: 'material'
+  language: 'ja'
+  feature:
+    tabs: true
+
+markdown_extensions:
+  - codehilite:
+      linenums: true
+
+nav:
+  - Top: index.md
+  - Research:
+    - 研究内容: research/research.md
+    - 出版物: research/publication.md
+  - Members:
+    - List: member/list.md
+    - 松永康佑(Yasuhiro MATSUNAGA): member/matsunaga.md
+  - Resources:
+    - List: resource/resource.md
+
+extra_css:
+    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+    - "css/custom.css"
+
