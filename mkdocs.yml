@@ -1,0 +1,61 @@
+site_name: 埼玉大学工学部情報工学科/大学院理工学研究科 松永研究室
+site_description: Matsunaga laboratory Saitama University
+site_author: Yasuhiro Matsunaga
+
+theme:
+  name: 'material'
+  language: 'ja'
+  feature:
+    tabs: true
+
+markdown_extensions:
+  - codehilite:
+      linenums: true
+
+nav:
+  - Top: index.md
+  - Research:
+    - 研究内容: research/research.md
+    - Publications: research/publication.md
+    - Software: research/software.md
+    - Computers: research/computers.md
+  - Members:
+    - List: member/list.md
+    - 松永康佑(Yasuhiro MATSUNAGA): member/matsunaga.md
+  - Teaching:
+    - 講義: teaching/lecture.md
+  - 学生の皆さんへ:
+    - 学生の皆さんへ: recruiting/index.md
+  - ラボ内部向け:
+    - Links: lab/link.md
+
+extra_css:
+    - "css/custom.css"
+#    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+#    - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+
+extra:
+    font:
+        text: "Noto Sans JP"
+        code: "Consolas"
+
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
